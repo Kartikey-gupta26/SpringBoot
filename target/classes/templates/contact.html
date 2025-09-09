@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kartikey's AWS Space</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="container">
+    <h1>Contact <span class="highlight">Me</span></h1>
+
+    <div class="contact-info">
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>email@example.com</span>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+1 (123) 456-7890</span>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Cloud City, AWS Region</span>
+        </div>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <div class="page-links">
+        <a th:href="@{/}" class="page-link">Home</a>
+        <a th:href="@{/about}" class="page-link">About Me</a>
+        <a th:href="@{/projects}" class="page-link">My Projects</a>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ using AWS Elastic Beanstalk</p>
+    </footer>
+</div>
+
+<script th:src="@{/js/script.js}"></script>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your message! (This is a demo - no message was actually sent)');
+        this.reset();
+    });
+</script>
+</body>
+</html>

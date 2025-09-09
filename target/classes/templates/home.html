@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Kartikey's AWS Space</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="container">
+    <h1>Hello, <span class="highlight">AWS Elastic Beanstalk</span>!</h1>
+
+    <p class="intro">Welcome to my cloud space powered by AWS Elastic Beanstalk. This platform makes deploying and scaling web applications incredibly simple.</p>
+
+    <div class="features">
+        <div class="feature">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud Powered</h3>
+            <p>Leveraging AWS infrastructure for reliability and scale</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-bolt"></i>
+            <h3>Fast Deployment</h3>
+            <p>Quick and easy application deployment</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Secure</h3>
+            <p>Enterprise-grade security and compliance</p>
+        </div>
+    </div>
+
+    <div class="signature">
+        Kartikey this side <span class="rocket">🚀</span>
+    </div>
+
+    <div class="page-links">
+        <a th:href="@{/about}" class="page-link">About Me</a>
+        <a th:href="@{/projects}" class="page-link">My Projects</a>
+        <a th:href="@{/contact}" class="page-link">Contact</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ using AWS Elastic Beanstalk</p>
+    </footer>
+</div>
+
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>
