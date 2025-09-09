@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Kartikey's AWS Space</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="container">
+    <h1>About <span class="highlight">Me</span></h1>
+
+    <div class="about-content">
+        <h2>My Journey</h2>
+        <p>Hello! I'm Kartikey, a passionate developer and cloud enthusiast. I love exploring the capabilities of AWS and building scalable applications.</p>
+
+        <h2>Skills & Expertise</h2>
+        <p>With experience in cloud computing, web development, and DevOps practices, I enjoy creating solutions that leverage the power of AWS services.</p>
+
+        <h2>AWS Certifications</h2>
+        <p>I'm continuously learning and expanding my AWS knowledge through various certifications and hands-on projects.</p>
+    </div>
+
+    <div class="page-links">
+        <a th:href="@{/}" class="page-link">Home</a>
+        <a th:href="@{/projects}" class="page-link">My Projects</a>
+        <a th:href="@{/contact}" class="page-link">Contact</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ using AWS Elastic Beanstalk</p>
+    </footer>
+</div>
+
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>
