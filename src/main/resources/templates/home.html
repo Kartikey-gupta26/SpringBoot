@@ -1,58 +1,257 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome | Kartikey's AWS Space</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kartikey Gupta — Portfolio</title>
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="description" content="Kartikey Gupta — B.Tech CSE (Business Systems). Projects: News on the go, Spotify Clone, Hostel Management System.">
 </head>
 <body>
-<div class="container">
-    <h1>Hello, <span class="highlight">AWS Elastic Beanstalk</span>!</h1>
+<a class="skip" href="#main">Skip to content</a>
 
-    <p class="intro">Welcome to my cloud space powered by AWS Elastic Beanstalk. This platform makes deploying and scaling web applications incredibly simple.</p>
-
-    <div class="features">
-        <div class="feature">
-            <i class="fas fa-cloud"></i>
-            <h3>Cloud Powered</h3>
-            <p>Leveraging AWS infrastructure for reliability and scale</p>
+<header class="topbar">
+    <div class="container topbar-inner">
+        <div class="brand">
+            <div class="avatar">KG</div>
+            <div>
+                <h1>Kartikey <span>Gupta</span></h1>
+                <p class="muted">B.Tech — Computer Science (Business Systems) • VIT</p>
+            </div>
         </div>
-        <div class="feature">
-            <i class="fas fa-bolt"></i>
-            <h3>Fast Deployment</h3>
-            <p>Quick and easy application deployment</p>
+
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#skills">Technologies</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact" class="cta">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main id="main">
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-left">
+                <h2>Hello, I'm <span class="accent">Kartikey Gupta</span></h2>
+                <p class="lead">Third-year Computer Science student building dynamic web applications and cloud-native systems. AWS certified and internship experience with Spring Boot + PL/SQL.</p>
+
+                <div class="contact-row">
+                    <a href="mailto:kartikey2604@gmail.com" class="btn"><i class="fa-regular fa-envelope"></i> kartikey2604@gmail.com</a>
+                    <a href="tel:+919374725101" class="btn outline"><i class="fa-solid fa-phone"></i> +91 93747 25101</a>
+                </div>
+
+                <div class="links-row">
+                    <a href="https://github.com/Kartikey-gupta26" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/kartikey-gupta-832327286/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#" onclick="downloadResume();return false;"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="card card-profile">
+                    <h3>Snapshot</h3>
+                    <ul>
+                        <li><strong>Degree:</strong> B.Tech — Computer Science (Business Systems)</li>
+                        <li><strong>Institute:</strong> Vellore Institute of Technology (CGPA: 9.02 — until 6th sem)</li>
+                        <li><strong>Location:</strong> Surat, GJ</li>
+                        <li><strong>Availability:</strong> Open to internships & collaborations</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Key Skills</h3>
+                    <p>Web Development, Cloud Computing (AWS), Spring Boot, PL/SQL, Java, PHP, React, Tailwind, Data Analytics</p>
+                </div>
+            </div>
         </div>
-        <div class="feature">
-            <i class="fas fa-shield-alt"></i>
-            <h3>Secure</h3>
-            <p>Enterprise-grade security and compliance</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About</h2>
+            <p>Third-year Computer Science student with hands-on experience building interactive web apps and cloud projects. Completed an AWS Cloud Practitioner certification and a summer internship at Fidelity Investments working on Spring Boot and PL/SQL. I enjoy collaborating in fast-paced teams and shipping production-ready features.</p>
         </div>
-    </div>
+    </section>
 
-    <div class="signature">
-        Kartikey this side <span class="rocket">🚀</span>
-    </div>
+    <!-- SKILLS -->
+    <section id="skills" class="section dark-section">
+        <div class="container">
+            <h2>Technologies</h2>
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <h4>Languages</h4>
+                    <p>Python, C, C++, Java, SQL, JavaScript, PHP</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Web & Frontend</h4>
+                    <p>HTML, CSS, Tailwind CSS, React, Tailwind</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Backend & DB</h4>
+                    <p>Spring Boot, PHP, MySQL, PL/SQL, PDO</p>
+                </div>
+                <div class="skill-card">
+                    <h4>Cloud & Tools</h4>
+                    <p>AWS (Cloud Practitioner), Git, VS Code, XAMPP</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="page-links">
-        <a th:href="@{/about}" class="page-link">About Me</a>
-        <a th:href="@{/projects}" class="page-link">My Projects</a>
-        <a th:href="@{/contact}" class="page-link">Contact</a>
-    </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
 
-    <div class="social-links">
-        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-    </div>
+            <div class="project-list">
+                <article class="project">
+                    <h3>News on the Go</h3>
+                    <p>React + Tailwind frontend fetching news APIs (newsapi.org) and rendering latest articles using JSX and client-side fetch calls.</p>
+                    <div class="meta">
+                        <span>Tech: React, Tailwind, APIs</span>
+                        <a class="link" href="https://github.com/Kartikey-gupta26/News-on-the-Go" target="_blank">View repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
 
-    <footer>
-        <p>Made with ❤️ using AWS Elastic Beanstalk</p>
+                <article class="project">
+                    <h3>Spotify Clone</h3>
+                    <p>Frontend replica of Spotify with play/pause and hover controls. Built with vanilla HTML, CSS, JS.</p>
+                    <div class="meta">
+                        <span>Tech: HTML, CSS, JavaScript</span>
+                        <a class="link" href="https://github.com/Kartikey-gupta26/spotify" target="_blank">View repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <h3>Hostel Management System</h3>
+                    <p>Full-stack system with dual dashboards (students & staff), role-based access, real-time request tracking, secure DB ops using PDO.</p>
+                    <div class="meta">
+                        <span>Tech: PHP, MySQL, HTML, JS</span>
+                        <a class="link" href="https://github.com/Kartikey-gupta26/Hostel-Management" target="_blank">View repo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section dark-section">
+        <div class="container">
+            <h2>Experience & Certificates</h2>
+            <div class="exp-grid">
+                <div class="exp-card">
+                    <h4>Summer Internship — Fidelity Investments</h4>
+                    <p><em>May 2025 – July 2025</em></p>
+                    <ul>
+                        <li>Worked on middle tier (Spring Boot) and PL/SQL; optimized data flow with async processing (Java ExecutorService).</li>
+                        <li>Followed Agile + DevOps practices during the development cycle.</li>
+                    </ul>
+                </div>
+
+                <div class="exp-card">
+                    <h4>AWS Cloud Practitioner</h4>
+                    <p><em>Aug 2024</em></p>
+                    <p>Foundational cloud knowledge; hands-on with EC2 & S3 console tasks.</p>
+                </div>
+
+                <div class="exp-card">
+                    <h4>IEEE-CS — Senior Core Committee</h4>
+                    <p><em>2022 – 2024</em></p>
+                    <p>Organized Hackbattle (500+ participants) and coordinated logistics and execution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="container contact-section">
+            <h2>Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>Get in touch</h4>
+                    <p>Email: <a href="mailto:kartikey2604@gmail.com">kartikey2604@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+919374725101">+91 93747 25101</a></p>
+                    <div class="socials">
+                        <a href="https://github.com/Kartikey-gupta26" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kartikey-gupta-832327286/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="handleContact(event)">
+                    <label>
+                        Your name
+                        <input type="text" id="cname" required placeholder="Your name">
+                    </label>
+
+                    <label>
+                        Your email
+                        <input type="email" id="cemail" required placeholder="you@example.com">
+                    </label>
+
+                    <label>
+                        Message
+                        <textarea id="cmsg" rows="4" required placeholder="Say hi or request a collab"></textarea>
+                    </label>
+
+                    <div class="form-actions">
+                        <button class="btn" type="submit">Send (demo)</button>
+                        <button type="button" class="btn outline" onclick="copyEmail()">Copy email</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Built by Kartikey — portfolio generated from uploaded resume. :contentReference[oaicite:1]{index=1}</p>
+        </div>
     </footer>
-</div>
+</main>
 
-<script th:src="@{/js/script.js}"></script>
+<script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', e=>{
+            const href = a.getAttribute('href');
+            if(href.length>1){
+                e.preventDefault();
+                document.querySelector(href).scrollIntoView({behavior:'smooth', block:'start'});
+            }
+        });
+    });
+
+    function handleContact(e){
+        e.preventDefault();
+        const name = document.getElementById('cname').value.trim();
+        alert('Thanks, ' + (name || '') + '! This is a demo contact form — no message sent.');
+        e.target.reset?.();
+    }
+
+    function copyEmail(){
+        navigator.clipboard?.writeText('kartikey2604@gmail.com').then(()=>{ alert('Email copied'); }, ()=>{ alert('Copy failed');});
+    }
+
+    function downloadResume(){
+        // put the PDF in public/assets/Kartikey_Resume_July_2025.pdf for this link to work
+        const link = document.createElement('a');
+        link.href = 'assets/Kartikey_Resume_July_2025.pdf';
+        link.download = 'Kartikey_Resume_July_2025.pdf';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+    }
+</script>
 </body>
 </html>
